@@ -47,7 +47,7 @@ namespace Vickn.UMeng.Component.Sdk.Test
             };
 
             var response = client.Execute(request);
-            Assert.True(response.Data.IsError);
+            Assert.False(response.Data.IsError);
             if (response.Success && response.Data != null && !response.Data.IsError)
             {
                 msgid = response.Data.Data.MsgId;
@@ -62,10 +62,10 @@ namespace Vickn.UMeng.Component.Sdk.Test
             IAopClient client = new DefaultAopClient("http://msg.umeng.com", appkey, app_master_secret);
             var request = new QueryStatusRequest
             {
-                TaskId = "uf22337148947576478600"
+                TaskId = "uarjv1o158330847096501"
             };
             var response = client.Execute(request);
-            Assert.True(response.Data.IsError);
+            Assert.False(response.Data.IsError);
             if (response.Success && response.Data != null && !response.Data.IsError)
             {
                 msgid = response.Data.Data.TaskId;
@@ -80,10 +80,10 @@ namespace Vickn.UMeng.Component.Sdk.Test
             IAopClient client = new DefaultAopClient("http://msg.umeng.com", appkey, app_master_secret);
             var request = new TaskCancelRequest
             {
-                TaskId = "uf22337148947576478600"
+                TaskId = "uarjv1o158330847096501"
             };
             var response = client.Execute(request);
-            Assert.True(response.Data.IsError);
+            Assert.False(response.Data.IsError);
             if (response.Success && response.Data != null && !response.Data.IsError)
             {
                 msgid = response.Data.Data.TaskId;
@@ -101,7 +101,7 @@ namespace Vickn.UMeng.Component.Sdk.Test
                 Content = string.Join("\n", new string[] { "AvXxX7s8qEapm2wVQjUtcxSPVvm9vDiSw6zB2AEgj59b", "AvXxX7s8qEapm2wVQjUtcxSPVvm9vDiSw6zB2AEgj59b" })
             };
             var response = client.Execute(request);
-            Assert.True(response.Data.IsError);
+            Assert.False(response.Data.IsError);
             if (response.Success && response.Data != null && !response.Data.IsError)
             {
                 fileid = response.Data.Data.FileId;
@@ -151,7 +151,7 @@ namespace Vickn.UMeng.Component.Sdk.Test
             //var json = request.ToJSON("", "");
             //Assert.IsFalse(json == null);
             var response = client.Execute(request);
-            Assert.True(response.Data.IsError);
+            Assert.False(response.Data.IsError);
             if (response.Success && response.Data != null && !response.Data.IsError)
             {
                 msgid = response.Data.Data.MsgId;
@@ -181,7 +181,7 @@ namespace Vickn.UMeng.Component.Sdk.Test
                 ProductionMode = false
             };
             var response = client.Execute(request);
-            Assert.True(response.Data.IsError);
+            Assert.False(response.Data.IsError);
 
             //var abc = new ABC();
             //var v = abc.ToJson();
