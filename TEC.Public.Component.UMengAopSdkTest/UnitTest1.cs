@@ -14,8 +14,8 @@ namespace TEC.Public.Component.UMengAopSdkTest
     {
         string msgid = null;
         string fileid = null;
-        const string appkey = "";
-        const string app_master_secret = "";
+        const string appkey = "5bfcbd42b465f57f3000005d";
+        const string app_master_secret = "hsurezqetqkqzvcecqe3t6cpakk9itkj ";
         [TestMethod]
         public void TestMethodAndroid()
         {
@@ -24,23 +24,27 @@ namespace TEC.Public.Component.UMengAopSdkTest
             {
                 //Alias =  "c13d8e62cb9e5cea322f34e1e1a55407" ,
                 //AliasType = "main",
-                DeviceTokens = "AvXxX7s8qEapm2wVQjUtcxSPVvm9vDiSw6zB2AEgj59b",
+                //DeviceTokens = "AuNXn_EMkKwRWrS7CK03mFxPYN1UrV0lh7zix0qRtF5x",
+                Alias = "28014",
+                AliasType = "uid",
                 //FileId= "PF910811489472565783",
-                PushType = PushTypeEnum.UniCast,
-                Payload = new AndroidPushRequest.PayloadModel
+                PushType = PushTypeEnum.CustomizedCast,
+                Payload = new AndroidPushRequest.PayloadModel()
                 {
-                    DisplayType = AndroidPushRequest.PayloadModel.DisplayTypeEnum.Notification,
+                    DisplayType = AndroidPushRequest.PayloadModel.DisplayTypeEnum.Message,
                     Body = new AndroidPushRequest.PayloadModel.BodyModel
                     {
                         Text = "统统优品促销活动1",
-                        Title = "统统优品促销活动2",
+                        Title = "统统优品促销活动1",
                         Ticker = "统统优品促销活动3",
-                        AfterOpen = AndroidPushRequest.PayloadModel.BodyModel.AfterOpenEnum.Go_Custom,
-                        Custom = JObject.FromObject(new { type = "system", link = "main", parameter = "" })
+                        AfterOpen = AndroidPushRequest.PayloadModel.BodyModel.AfterOpenEnum.Go_Activity,
+                        Custom = JObject.FromObject(new { type = "system1", link = "main1", parameter = "" })
                     }
                 },
+                MIPush = true,
+                MIActivity = "com.vickn.twj.mipushdemo.MipushTestActivity",
                 Filter = null,
-                ProductionMode = false,
+                ProductionMode = true,
                 Description = "统统优品促销活动"
             };
 
