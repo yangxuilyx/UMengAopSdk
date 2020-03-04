@@ -12,7 +12,7 @@ namespace Vickn.UMeng.Component.Sdk.Test
         string msgid = null;
         string fileid = null;
         const string appkey = "5bfcbd42b465f57f3000005d";
-        const string app_master_secret = "hsurezqetqkqzvcecqe3t6cpakk9itkj ";
+        const string app_master_secret = "hsurezqetqkqzvcecqe3t6cpakk9itkj";
 
         [Fact]
         public void TestMethodAndroid()
