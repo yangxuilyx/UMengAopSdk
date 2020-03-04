@@ -63,12 +63,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TEC.Public.Component.UMengAopSdk\TEC.Public.Component.UMengAopSdk.csproj">
-      <Project>{59d99137-c235-4cd2-8554-900a0a5768f1}</Project>
-      <Name>TEC.Public.Component.UMengAopSdk</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

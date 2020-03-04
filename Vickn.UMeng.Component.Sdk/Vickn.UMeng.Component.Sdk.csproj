@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Description>Vickn.UMeng.Component.Sdk</Description>
+    <Company>Vickn</Company>
+    <Authors>Yanusosu</Authors>
+    <Copyright></Copyright>
+    <PackageTags>Vickn</PackageTags>
+    <RootNamespace>Vickn.UMeng.Component.Sdk</RootNamespace>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Vickn.UMeng.Component.Sdk</PackageId>
+    <Product>Vickn.UMeng.Component.Sdk</Product>
+  </PropertyGroup>
+  <ItemGroup>
+   <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+  </ItemGroup>
+</Project>
