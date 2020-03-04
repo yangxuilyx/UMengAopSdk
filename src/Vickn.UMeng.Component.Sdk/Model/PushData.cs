@@ -14,7 +14,7 @@
 
 using Newtonsoft.Json;
 
-namespace Vickn.UMeng.Component.Sdk.Model
+namespace Vickn.UPush.Component.Sdk.Model
 {
     public class PushData
     {

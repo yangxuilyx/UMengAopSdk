@@ -12,13 +12,13 @@
 //
 //----------------------------------------------------------------*/
 
+using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
-using Vickn.UMeng.Component.Sdk.FilterExpression;
-using Vickn.UMeng.Component.Sdk.Response;
+using Vickn.UPush.Component.Sdk.FilterExpression;
+using Vickn.UPush.Component.Sdk.Response;
 
-namespace Vickn.UMeng.Component.Sdk.Request
+namespace Vickn.UPush.Component.Sdk.Request
 {
     [Serializable]
     public class IOSPushRequest : IAopRequest<IOSPushResponse, IOSPushResponse.DataModel>

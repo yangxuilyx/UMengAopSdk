@@ -15,7 +15,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Vickn.UMeng.Component.Sdk
+namespace Vickn.UPush.Component.Sdk
 {
     /// <summary>
     /// AOP客户端异常。

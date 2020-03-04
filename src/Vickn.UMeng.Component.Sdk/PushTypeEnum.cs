@@ -14,7 +14,7 @@
 
 using System.ComponentModel;
 
-namespace Vickn.UMeng.Component.Sdk
+namespace Vickn.UPush.Component.Sdk
 {
     public enum PushTypeEnum
     {

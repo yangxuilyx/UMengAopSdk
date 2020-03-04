@@ -12,7 +12,7 @@
 //
 //----------------------------------------------------------------*/
 
-namespace Vickn.UMeng.Component.Sdk.Request
+namespace Vickn.UPush.Component.Sdk.Request
 {
     /// <summary>
     /// AOP请求接口。

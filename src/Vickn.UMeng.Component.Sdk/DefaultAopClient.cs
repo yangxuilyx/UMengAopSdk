@@ -12,15 +12,15 @@
 //
 //----------------------------------------------------------------*/
 
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Security.Cryptography;
 using System.Text;
-using Vickn.UMeng.Component.Sdk.Request;
-using Vickn.UMeng.Component.Sdk.Util;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Vickn.UPush.Component.Sdk.Request;
+using Vickn.UPush.Component.Sdk.Util;
 
-namespace Vickn.UMeng.Component.Sdk
+namespace Vickn.UPush.Component.Sdk
 {
     /// <summary>
     /// AOP客户端。

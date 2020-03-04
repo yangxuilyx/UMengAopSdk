@@ -12,11 +12,11 @@
 //
 //----------------------------------------------------------------*/
 
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
-namespace Vickn.UMeng.Component.Sdk.FilterExpression
+namespace Vickn.UPush.Component.Sdk.FilterExpression
 {
     [Serializable]
 

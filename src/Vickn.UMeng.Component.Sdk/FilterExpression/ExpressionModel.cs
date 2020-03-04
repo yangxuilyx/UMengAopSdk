@@ -12,12 +12,12 @@
 //
 //----------------------------------------------------------------*/
 
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 
-namespace Vickn.UMeng.Component.Sdk.FilterExpression
+namespace Vickn.UPush.Component.Sdk.FilterExpression
 {
     /// <summary>
     /// 筛选表达式

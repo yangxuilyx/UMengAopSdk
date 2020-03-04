@@ -14,7 +14,7 @@
 
 using System;
 
-namespace Vickn.UMeng.Component.Sdk.FilterExpression
+namespace Vickn.UPush.Component.Sdk.FilterExpression
 {
     [Serializable]
     /// <summary>

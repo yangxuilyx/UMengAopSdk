@@ -14,7 +14,7 @@
 
 using System;
 
-namespace Vickn.UMeng.Component.Sdk.Util
+namespace Vickn.UPush.Component.Sdk.Util
 {
     /// <summary>
     public abstract class AopUtils

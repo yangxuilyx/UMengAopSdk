@@ -12,11 +12,11 @@
 //
 //----------------------------------------------------------------*/
 
+using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
 
-namespace Vickn.UMeng.Component.Sdk
+namespace Vickn.UPush.Component.Sdk
 {
     public class RequestJsonConverter : JsonConverter
     {

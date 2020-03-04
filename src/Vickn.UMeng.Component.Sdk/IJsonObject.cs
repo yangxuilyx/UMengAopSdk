@@ -14,7 +14,7 @@
 
 using Newtonsoft.Json.Linq;
 
-namespace Vickn.UMeng.Component.Sdk
+namespace Vickn.UPush.Component.Sdk
 {
     public interface IJsonObject
     {

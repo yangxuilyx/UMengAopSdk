@@ -15,7 +15,7 @@
 using System;
 using System.IO;
 
-namespace Vickn.UMeng.Component.Sdk.Util
+namespace Vickn.UPush.Component.Sdk.Util
 {
     /// <summary>
     /// 文件元数据。

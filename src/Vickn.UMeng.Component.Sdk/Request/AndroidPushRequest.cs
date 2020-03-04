@@ -12,14 +12,14 @@
 //
 //----------------------------------------------------------------*/
 
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
 using System.ComponentModel;
-using Vickn.UMeng.Component.Sdk.FilterExpression;
-using Vickn.UMeng.Component.Sdk.Response;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Vickn.UPush.Component.Sdk.FilterExpression;
+using Vickn.UPush.Component.Sdk.Response;
 
-namespace Vickn.UMeng.Component.Sdk.Request
+namespace Vickn.UPush.Component.Sdk.Request
 {
     [Serializable]
     public class AndroidPushRequest : IAopRequest<AndroidPushResponse, AndroidPushResponse.DataModel>

@@ -14,7 +14,7 @@
 
 using Newtonsoft.Json.Linq;
 
-namespace Vickn.UMeng.Component.Sdk.FilterExpression
+namespace Vickn.UPush.Component.Sdk.FilterExpression
 {
     public class FieldExpression : IExpression
     {

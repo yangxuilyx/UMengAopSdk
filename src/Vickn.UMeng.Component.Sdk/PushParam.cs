@@ -12,10 +12,10 @@
 //
 //----------------------------------------------------------------*/
 
-using Newtonsoft.Json;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
-namespace Vickn.UMeng.Component.Sdk
+namespace Vickn.UPush.Component.Sdk
 {
     public class PushParam
     {

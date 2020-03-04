@@ -1,11 +1,9 @@
 ﻿using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Vickn.UMeng.Component.Sdk.FilterExpression;
-using Vickn.UMeng.Component.Sdk.Request;
 using Xunit;
 
-namespace Vickn.UMeng.Component.Sdk.Test
+namespace Vickn.UPush.Component.Sdk.Test
 {
     public class UnitTest1
     {

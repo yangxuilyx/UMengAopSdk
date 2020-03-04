@@ -12,10 +12,10 @@
 //
 //----------------------------------------------------------------*/
 
-using Newtonsoft.Json;
 using System;
+using Newtonsoft.Json;
 
-namespace Vickn.UMeng.Component.Sdk.FilterExpression
+namespace Vickn.UPush.Component.Sdk.FilterExpression
 {
     /// <summary>
     /// 筛选条件

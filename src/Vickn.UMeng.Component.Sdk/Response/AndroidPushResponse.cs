@@ -12,10 +12,10 @@
 //
 //----------------------------------------------------------------*/
 
-using Newtonsoft.Json;
 using System;
+using Newtonsoft.Json;
 
-namespace Vickn.UMeng.Component.Sdk.Response
+namespace Vickn.UPush.Component.Sdk.Response
 {
     public class AndroidPushResponse : AopResponse<AndroidPushResponse.DataModel>
     {

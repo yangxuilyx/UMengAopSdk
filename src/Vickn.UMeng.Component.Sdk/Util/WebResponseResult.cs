@@ -12,10 +12,10 @@
 //
 //----------------------------------------------------------------*/
 
-using Newtonsoft.Json;
 using System;
+using Newtonsoft.Json;
 
-namespace Vickn.UMeng.Component.Sdk.Util
+namespace Vickn.UPush.Component.Sdk.Util
 {
     public class WebResponseResult<T>
     {

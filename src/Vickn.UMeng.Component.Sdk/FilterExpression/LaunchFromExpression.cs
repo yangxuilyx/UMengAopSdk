@@ -12,10 +12,10 @@
 //
 //----------------------------------------------------------------*/
 
-using Newtonsoft.Json.Linq;
 using System;
+using Newtonsoft.Json.Linq;
 
-namespace Vickn.UMeng.Component.Sdk.FilterExpression
+namespace Vickn.UPush.Component.Sdk.FilterExpression
 {
     /// <summary>
     /// 筛选字段：一段时间内活跃/一段时间内不活跃

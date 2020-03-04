@@ -12,11 +12,11 @@
 //
 //----------------------------------------------------------------*/
 
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 
-namespace Vickn.UMeng.Component.Sdk.FilterExpression
+namespace Vickn.UPush.Component.Sdk.FilterExpression
 {
     /// <summary>
     /// 筛选字段：设备型号

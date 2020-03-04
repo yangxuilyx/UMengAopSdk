@@ -17,7 +17,7 @@ using System.IO;
 using System.Net;
 using System.Text;
 
-namespace Vickn.UMeng.Component.Sdk.Util
+namespace Vickn.UPush.Component.Sdk.Util
 {
     /// <summary>
     /// 网络工具类。
