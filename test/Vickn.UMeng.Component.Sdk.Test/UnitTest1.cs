@@ -1,22 +1,20 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TEC.Public.Component.UMengAopSdk;
-using TEC.Public.Component.UMengAopSdk.Request;
-using TEC.Public.Component.UMengAopSdk.Response;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using TEC.Public.Component.UMengAopSdk.FilterExpression;
+using Vickn.UMeng.Component.Sdk.FilterExpression;
+using Vickn.UMeng.Component.Sdk.Request;
+using Xunit;
 
-namespace TEC.Public.Component.UMengAopSdkTest
+namespace Vickn.UMeng.Component.Sdk.Test
 {
-    [TestClass]
     public class UnitTest1
     {
         string msgid = null;
         string fileid = null;
         const string appkey = "5bfcbd42b465f57f3000005d";
         const string app_master_secret = "hsurezqetqkqzvcecqe3t6cpakk9itkj ";
-        [TestMethod]
+
+        [Fact]
         public void TestMethodAndroid()
         {
             IAopClient client = new DefaultAopClient("http://msg.umeng.com", appkey, app_master_secret);
@@ -49,7 +47,7 @@ namespace TEC.Public.Component.UMengAopSdkTest
             };
 
             var response = client.Execute(request);
-            Assert.IsFalse(response.Data.IsError);
+            Assert.True(response.Data.IsError);
             if (response.Success && response.Data != null && !response.Data.IsError)
             {
                 msgid = response.Data.Data.MsgId;
@@ -58,7 +56,7 @@ namespace TEC.Public.Component.UMengAopSdkTest
             //var v = abc.ToJson();
 
         }
-        [TestMethod]
+        [Fact]
         public void TestMethodQuery()
         {
             IAopClient client = new DefaultAopClient("http://msg.umeng.com", appkey, app_master_secret);
@@ -67,7 +65,7 @@ namespace TEC.Public.Component.UMengAopSdkTest
                 TaskId = "uf22337148947576478600"
             };
             var response = client.Execute(request);
-            Assert.IsFalse(response.Data.IsError);
+            Assert.True(response.Data.IsError);
             if (response.Success && response.Data != null && !response.Data.IsError)
             {
                 msgid = response.Data.Data.TaskId;
@@ -76,7 +74,7 @@ namespace TEC.Public.Component.UMengAopSdkTest
             //var v = abc.ToJson();
 
         }
-        [TestMethod]
+        [Fact]
         public void TestMethodCancel()
         {
             IAopClient client = new DefaultAopClient("http://msg.umeng.com", appkey, app_master_secret);
@@ -85,7 +83,7 @@ namespace TEC.Public.Component.UMengAopSdkTest
                 TaskId = "uf22337148947576478600"
             };
             var response = client.Execute(request);
-            Assert.IsFalse(response.Data.IsError);
+            Assert.True(response.Data.IsError);
             if (response.Success && response.Data != null && !response.Data.IsError)
             {
                 msgid = response.Data.Data.TaskId;
@@ -94,7 +92,7 @@ namespace TEC.Public.Component.UMengAopSdkTest
             //var v = abc.ToJson();
 
         }
-        [TestMethod]
+        [Fact]
         public void TestMethodUpload()
         {
             IAopClient client = new DefaultAopClient("http://msg.umeng.com", appkey, app_master_secret);
@@ -103,7 +101,7 @@ namespace TEC.Public.Component.UMengAopSdkTest
                 Content = string.Join("\n", new string[] { "AvXxX7s8qEapm2wVQjUtcxSPVvm9vDiSw6zB2AEgj59b", "AvXxX7s8qEapm2wVQjUtcxSPVvm9vDiSw6zB2AEgj59b" })
             };
             var response = client.Execute(request);
-            Assert.IsFalse(response.Data.IsError);
+            Assert.True(response.Data.IsError);
             if (response.Success && response.Data != null && !response.Data.IsError)
             {
                 fileid = response.Data.Data.FileId;
@@ -112,7 +110,7 @@ namespace TEC.Public.Component.UMengAopSdkTest
             //var v = abc.ToJson();
 
         }
-        [TestMethod]
+        [Fact]
         public void TestMethodAndroidFilter()
         {
             IAopClient client = new DefaultAopClient("http://msg.umeng.com", appkey, app_master_secret);
@@ -153,7 +151,7 @@ namespace TEC.Public.Component.UMengAopSdkTest
             //var json = request.ToJSON("", "");
             //Assert.IsFalse(json == null);
             var response = client.Execute(request);
-            Assert.IsFalse(response.Data.IsError);
+            Assert.True(response.Data.IsError);
             if (response.Success && response.Data != null && !response.Data.IsError)
             {
                 msgid = response.Data.Data.MsgId;
@@ -162,7 +160,7 @@ namespace TEC.Public.Component.UMengAopSdkTest
             //var v = abc.ToJson();
 
         }
-        [TestMethod]
+        [Fact]
         public void TestMethodIOS()
         {
             IAopClient client = new DefaultAopClient("http://msg.umeng.com", appkey, app_master_secret);
@@ -183,7 +181,7 @@ namespace TEC.Public.Component.UMengAopSdkTest
                 ProductionMode = false
             };
             var response = client.Execute(request);
-            Assert.IsFalse(response.Data.IsError);
+            Assert.True(response.Data.IsError);
 
             //var abc = new ABC();
             //var v = abc.ToJson();
